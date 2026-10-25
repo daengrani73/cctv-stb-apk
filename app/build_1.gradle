@@ -1,0 +1,27 @@
+
+plugins { id 'com.android.application'; id 'org.jetbrains.kotlin.android' version '1.8.20' apply false; id 'kotlin-android' }
+
+android {
+    compileSdk 33
+    defaultConfig {
+        applicationId "net.alijaya.cctvmonitor"
+        minSdk 21
+        targetSdk 33
+        versionCode 6
+        versionName "1.0-android6-stb"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions { jvmTarget = '1.8' }
+    namespace 'net.alijaya.cctvmonitor'
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.core:core-ktx:1.10.1'
+    implementation 'androidx.webkit:webkit:1.6.1'
+    implementation 'com.google.android.exoplayer:exoplayer:2.18.7'
+    implementation 'com.google.android.material:material:1.9.0'
+}
